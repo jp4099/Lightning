@@ -2,7 +2,7 @@ void setup()
 {
   size(600,600);
   strokeWeight(5);
-  background(0);
+  background(246,224,255);
 }
 
 int startX = 150;
@@ -26,19 +26,19 @@ void draw()
 void directions()
 {
   textSize(40);
-  fill(255);
+  fill(0);
   text("AHH, KEEP CLICKING!", 100, 60); 
 }
 
 void spraycan()
 {
   //can
-  stroke(255);
-  fill((int)(Math.random()*255), (int)(Math.random()*255), (int)(Math.random()*255));
+  stroke(0);
+  fill((int)(Math.random()*255+50), (int)(Math.random()*255+50), (int)(Math.random()*255+50));
   rect(10,300,150,300,15); 
   
   //nozzle
-  stroke(255);
+  stroke(0);
   fill(255,0,0);
   rect(100,250,50,50,7); 
   stroke(0);
@@ -47,22 +47,22 @@ void spraycan()
   
   //label
   noStroke();
-  fill(255);
+  fill(0);
   rect(13,370,145,100);
   
   //label word
   textSize(50);
-  fill(0);
+  fill(255);
   text("SILLY", 25, 435);
   
   textSize(15);
-  fill(0);
+  fill(255);
   text("string", 65, 460);
 }
 
 void mousePressed()
 {
-  stroke((int)(Math.random()*255), (int)(Math.random()*255), (int)(Math.random()*255));
+  stroke((int)(Math.random()*255+100), (int)(Math.random()*255+100), (int)(Math.random()*255+100));
   startX = 150;
   startY = 270;
   endX = 0;
